@@ -1,0 +1,45 @@
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+
+.virtual-scroll {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.frame {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 2px solid #dedede;
+  box-shadow: 1px 3px 10px #9abdcf;
+  width: 100%;
+}

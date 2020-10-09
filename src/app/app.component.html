@@ -1,0 +1,19 @@
+<div class="full-height flex-column flex-1" *ngIf="windowHeight">
+  <!--  to void bottom screen rendering problem we have to set same card height fixed size and itemSize in px -->
+  <cdk-virtual-scroll-viewport class="virtual-scroll"
+    [itemSize]="windowHeight">
+    <ng-container *cdkVirtualFor="let color of randomColors;"
+      [ngTemplateOutlet]="frameTemplate"
+      [ngTemplateOutletContext]="{context: color}"></ng-container>
+  </cdk-virtual-scroll-viewport>
+</div>
+
+<ng-template #frameTemplate
+  class="full-width"
+  let-color="context">
+  <div class="frame"
+    [style.height.px]="windowHeight"
+    [style.background-color]="color">
+    {{color}}
+  </div>
+</ng-template>
