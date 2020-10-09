@@ -1,4 +1,4 @@
-# AngularInfiniteScrollNgContainer
+# Example of Angular 9 infinite scroll ng-container + dynamic height 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
